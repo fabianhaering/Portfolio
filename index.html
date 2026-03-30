@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
+    <title>Portfolio Fabian</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Hallo, ich bin Fabian. Willkommen auf meiner Portfolio-Seite</h1>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/220x220" alt="Profilbild von Fabian">
+            </div>
+
+            <div class="hero-text">
+                <h1>Portfolio von Fabian</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+
+                <nav class="main-nav">
+                    <a href="#ueber-mich">Über mich</a>
+                    <a href="#projekte">Projekte</a>
+                    <a href="#anstellungen">Anstellungen</a>
+                    <a href="#lebenslauf">Lebenslauf</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
-        <p>Das hier ist der Platzhalter für später.</p>
+        <section id="ueber-mich" class="content-box">
+            <h2>Über mich</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vivamus lacinia odio vitae vestibulum vestibulum.
+            </p>
+        </section>
+
+        <section id="projekte" class="content-box">
+            <h2>Projekte</h2>
+            <p>
+                Hier werden später meine Projekte vorgestellt.
+            </p>
+        </section>
+
+        <section id="anstellungen" class="content-box">
+            <h2>Anstellungen</h2>
+            <p>
+                Hier kommen später berufliche Stationen hinein.
+            </p>
+        </section>
+
+        <section id="lebenslauf" class="content-box">
+            <h2>Lebenslauf</h2>
+            <p>
+                Hier folgt später mein Lebenslauf.
+            </p>
+        </section>
     </main>
 
     <footer>
         <p>© 2026 Fabian Haering</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

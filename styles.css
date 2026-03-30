@@ -15,105 +15,147 @@ body {
     color: #333;
 }
 
-
 /* =========================
-   LAYOUT
+   HERO / HEADER
 ========================= */
 
-header {
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eaf2ff, #f5f7fa);
+    padding: 40px 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #0a84ff;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* =========================
+   NAVIGATION / BUTTONS
+========================= */
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 12px 20px;
     background-color: #0a84ff;
     color: white;
-    padding: 20px;
-    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
+.main-nav a:hover {
+    background-color: #0066cc;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
 
 main {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
+
+.content-box {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.content-box h2 {
+    margin-bottom: 15px;
+    color: #0a84ff;
+}
+
+.content-box p {
+    margin-bottom: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
-
-
-/* =========================
-   TYPOGRAPHY
-========================= */
-
-h1, h2, h3 {
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-
-/* =========================
-   NAVIGATION (optional)
-========================= */
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #0a84ff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0066cc;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-section {
-    margin-bottom: 40px;
-}
-
 
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    .hero {
+        min-height: auto;
+        padding: 60px 20px;
     }
 
-    main {
-        margin: 20px auto;
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
     }
 }
