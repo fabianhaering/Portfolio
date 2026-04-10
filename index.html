@@ -3,69 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Fabian</title>
+    <title>Fabian Haering – ICT System Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/220x220" alt="Profilbild von Fabian">
-            </div>
+    <!-- NAV -->
+    <nav class="topnav" id="topnav">
+        <span class="nav-logo">FH</span>
+        <ul>
+            <li><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#werdegang">Werdegang</a></li>
+            <li><a href="#zertifikate">Zertifikate</a></li>
+            <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Menü">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-            <div class="hero-text">
-                <h1>Portfolio von Fabian</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
-
-                <nav class="main-nav">
-                    <a href="#ueber-mich">Über mich</a>
-                    <a href="#projekte">Projekte</a>
-                    <a href="#anstellungen">Anstellungen</a>
-                    <a href="#lebenslauf">Lebenslauf</a>
-                </nav>
+    <!-- HERO -->
+    <header class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-badge reveal">ICT System Engineer · Swisscom</div>
+            <h1 class="hero-name reveal">Fabian<br><em>Haering</em></h1>
+            <p class="hero-sub reveal">
+                Microsoft 365 Spezialist mit Leidenschaft für Identity, Security &amp; Cloud Collaboration.<br>
+                Vom Gaming-Kid zum Engineer bei der Swisscom.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#werdegang" class="btn btn-primary">Mein Werdegang</a>
+                <a href="https://www.linkedin.com/in/fabian-haering-63a323151/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
             </div>
         </div>
+        <div class="hero-scroll-hint">scroll</div>
     </header>
 
     <main>
-        <section id="ueber-mich" class="content-box">
-            <h2>Über mich</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vivamus lacinia odio vitae vestibulum vestibulum.
-            </p>
+
+        <!-- ÜBER MICH -->
+        <section id="ueber-mich" class="section">
+            <div class="section-inner two-col">
+                <div class="section-label reveal">01 — Über mich</div>
+                <div class="section-body">
+                    <h2 class="reveal">Von Minecraft-Mods<br>zur Cloud.</h2>
+                    <p class="reveal">
+                        Hallo, ich bin Fäbu. Die Welt der Informatik hat mich schon immer begeistert — angefangen mit Gaming und dem Modifizieren von Games wie Minecraft. Dadurch habe ich die Welt der PCs entdeckt und bin über die Informatikerlehre als Systemtechniker tiefer in die Branche eingetaucht.
+                    </p>
+                    <p class="reveal">
+                        Schnell hat sich ein Schwerpunkt herauskristallisiert: <strong>Microsoft 365</strong>. In den letzten 7 Jahren habe ich mich intensiv auf dieses Ökosystem spezialisiert — seit 2023 als <strong>ICT System Engineer bei der Swisscom</strong>, mit Fokus auf Teams, SharePoint und Identity & Access Management.
+                    </p>
+                    <div class="fun-facts reveal">
+                        <div class="fact">🏍️ Motorrad fahren</div>
+                        <div class="fact">🚵 Mountainbiken</div>
+                        <div class="fact">🎮 Gaming</div>
+                        <div class="fact">☁️ Microsoft 365</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="projekte" class="content-box">
-            <h2>Projekte</h2>
-            <p>
-                Hier werden später meine Projekte vorgestellt.
-            </p>
+        <!-- SKILLS -->
+        <section id="skills" class="section section-dark">
+            <div class="section-inner">
+                <div class="section-label reveal">02 — Skills</div>
+                <h2 class="reveal">Was ich kann.</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">☁️</div>
+                        <h3>Microsoft 365</h3>
+                        <p>Teams, SharePoint, Exchange Online — Administration, Architektur und Security auf Enterprise-Level.</p>
+                        <div class="skill-tags">
+                            <span>Teams</span>
+                            <span>SharePoint</span>
+                            <span>Exchange</span>
+                            <span>Entra ID</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">🔐</div>
+                        <h3>Identity & Security</h3>
+                        <p>Identity & Access Management mit modernen IAM-Plattformen und Security-Konzepten in der Cloud.</p>
+                        <div class="skill-tags">
+                            <span>SailPoint</span>
+                            <span>Omada</span>
+                            <span>Zero Trust</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">⚡</div>
+                        <h3>Automatisierung</h3>
+                        <p>Scripting und Automatisierung von Microsoft-Prozessen, Provisionierung und Admin-Tasks.</p>
+                        <div class="skill-tags">
+                            <span>PowerShell</span>
+                            <span>Graph API</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">📞</div>
+                        <h3>UCC / Telefonie</h3>
+                        <p>Unified Communications & Collaboration — Teams Voice, Direct Routing und AudioCodes-Konfiguration.</p>
+                        <div class="skill-tags">
+                            <span>Teams Voice</span>
+                            <span>AudioCodes</span>
+                            <span>Direct Routing</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lang-row reveal">
+                    <div class="lang-item">
+                        <span class="lang-name">Deutsch</span>
+                        <span class="lang-level native">Muttersprache</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Englisch</span>
+                        <span class="lang-level high">Verhandlungssicher</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Französisch</span>
+                        <span class="lang-level mid">Gut</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="anstellungen" class="content-box">
-            <h2>Anstellungen</h2>
-            <p>
-                Hier kommen später berufliche Stationen hinein.
-            </p>
+        <!-- WERDEGANG -->
+        <section id="werdegang" class="section">
+            <div class="section-inner">
+                <div class="section-label reveal">03 — Werdegang</div>
+                <h2 class="reveal">Mein Weg.</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-group reveal">
+                        <div class="timeline-year">Beruflich</div>
+                        <div class="timeline-items">
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Mai 2023 – heute</div>
+                                    <div class="timeline-company">Swisscom</div>
+                                    <div class="timeline-role">ICT System Engineer</div>
+                                    <p>UCC Engineer mit Schwerpunkt Microsoft Teams, SharePoint und Identity Management.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Aug 2020 – Apr 2023</div>
+                                    <div class="timeline-company">BKW AG</div>
+                                    <div class="timeline-role">Fachspezialist Microsoft 365</div>
+                                    <p>Administration und Betrieb der Microsoft 365-Umgebung inkl. Teams und SharePoint.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Aug 2016 – Jul 2020</div>
+                                    <div class="timeline-company">BKW AG</div>
+                                    <div class="timeline-role">Lernender Informatiker EFZ – Systemtechnik</div>
+                                    <p>4-jährige Berufslehre mit Vertiefung in Systemtechnik und IT-Infrastruktur.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-group reveal">
+                        <div class="timeline-year">Ausbildung</div>
+                        <div class="timeline-items">
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot current"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Sep 2022 – Aug 2026</div>
+                                    <div class="timeline-company">Berner Fachhochschule</div>
+                                    <div class="timeline-role">B.Sc. Wirtschaftsinformatik</div>
+                                    <p>Berufsbegleitendes Studium mit Fokus auf Business IT, digitale Transformation und Systemarchitektur.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Aug 2016 – Jul 2020</div>
+                                    <div class="timeline-company">GIBB Bern</div>
+                                    <div class="timeline-role">Berufsfachschule &amp; Berufsmatura</div>
+                                    <p>Abschluss Berufsmatura mit Berufsfeld Technik, Architektur und Life Sciences.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
-        <section id="lebenslauf" class="content-box">
-            <h2>Lebenslauf</h2>
-            <p>
-                Hier folgt später mein Lebenslauf.
-            </p>
+        <!-- ZERTIFIKATE -->
+        <section id="zertifikate" class="section section-accent">
+            <div class="section-inner">
+                <div class="section-label reveal">04 — Zertifikate</div>
+                <h2 class="reveal">Microsoft Certified.</h2>
+                <div class="cert-grid">
+                    <a href="https://learn.microsoft.com/de-ch/users/faha-7530/credentials?tab=credentials-tab" target="_blank" class="cert-card reveal">
+                        <div class="cert-badge">MS</div>
+                        <div>
+                            <div class="cert-title">Security Administrator Associate</div>
+                            <div class="cert-issuer">Microsoft</div>
+                        </div>
+                        <span class="cert-arrow">↗</span>
+                    </a>
+                    <a href="https://learn.microsoft.com/de-ch/users/faha-7530/credentials?tab=credentials-tab" target="_blank" class="cert-card reveal">
+                        <div class="cert-badge">MS</div>
+                        <div>
+                            <div class="cert-title">Teams Administrator Associate</div>
+                            <div class="cert-issuer">Microsoft</div>
+                        </div>
+                        <span class="cert-arrow">↗</span>
+                    </a>
+                    <a href="https://learn.microsoft.com/de-ch/users/faha-7530/credentials?tab=credentials-tab" target="_blank" class="cert-card reveal">
+                        <div class="cert-badge">MS</div>
+                        <div>
+                            <div class="cert-title">Collaboration Communications Systems Engineer Associate</div>
+                            <div class="cert-issuer">Microsoft</div>
+                        </div>
+                        <span class="cert-arrow">↗</span>
+                    </a>
+                    <a href="https://learn.microsoft.com/de-ch/users/faha-7530/credentials?tab=credentials-tab" target="_blank" class="cert-card reveal">
+                        <div class="cert-badge">AC</div>
+                        <div>
+                            <div class="cert-title">AudioCodes Essentials &amp; Configuration</div>
+                            <div class="cert-issuer">AudioCodes</div>
+                        </div>
+                        <span class="cert-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
         </section>
+
+        <!-- PROJEKTE PLATZHALTER -->
+        <section id="projekte" class="section">
+            <div class="section-inner">
+                <div class="section-label reveal">05 — Projekte</div>
+                <h2 class="reveal">Coming soon.</h2>
+                <p class="reveal" style="max-width:500px; color: var(--muted);">Meine Projekte werden hier bald vorgestellt. Stay tuned.</p>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 Fabian Haering</p>
+    <!-- KONTAKT / FOOTER -->
+    <footer id="kontakt" class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo reveal">FH</div>
+            <h2 class="reveal">Lass uns reden.</h2>
+            <p class="reveal">Ob Job, Projekt oder einfach ein Kaffee – ich freue mich von dir zu hören.</p>
+            <div class="footer-links reveal">
+                <a href="mailto:fabian.haering2202@gmail.com" class="btn btn-primary">E-Mail schreiben</a>
+                <a href="https://www.linkedin.com/in/fabian-haering-63a323151/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+                <a href="https://learn.microsoft.com/de-ch/users/faha-7530/credentials?tab=credentials-tab" target="_blank" class="btn btn-ghost">MS Learn ↗</a>
+            </div>
+            <div class="footer-copy reveal">© 2026 Fabian Haering · Düdingen, Schweiz</div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
