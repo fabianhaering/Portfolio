@@ -52,3 +52,20 @@ const observerReveal = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 reveals.forEach(el => observerReveal.observe(el));
+
+/* =========================
+   DARK MODE TOGGLE
+========================= */
+const darkToggle = document.getElementById('darkToggle');
+
+// Gespeicherte Präferenz laden
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark');
+    darkToggle.textContent = '☀️';
+}
+
+darkToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark');
+    darkToggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('darkMode', isDark);
+});
